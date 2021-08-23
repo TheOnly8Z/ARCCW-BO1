@@ -16,7 +16,7 @@ att.BO1_StaminUp = true
 att.AttachSound = "weapons/arccw/bo1_perks/perk_stamina.wav"
 
 hook.Add("Move", "ArcCW_BO1_StaminUp", function(ply, mv)
-    local wep = ply:GetActiveWeapon()
+    local wep = IsValid(ply) and ply:GetActiveWeapon()
     if not IsValid(wep) or not wep.ArcCW or not wep:GetBuff_Override("BO1_StaminUp") then return end
 
     local max = ply:GetMaxSpeed()

@@ -17,13 +17,13 @@ att.BO1_PhDFlopper = true
 att.AttachSound = "weapons/arccw/bo1_perks/perk_flopper.wav"
 
 hook.Add("EntityTakeDamage", "ArcCW_BO1_PhDFlopper", function(ply, dmg)
-    local wep = ply:GetActiveWeapon()
+    local wep = IsValid(ply) and ply:IsPlayer() and ply:GetActiveWeapon()
     if not IsValid(wep) or not wep.ArcCW or not wep:GetBuff_Override("BO1_PhDFlopper") then return end
     if dmg:IsFallDamage() or dmg:IsExplosionDamage() then return true end
 end)
 
 hook.Add("GetFallDamage", "ArcCW_BO1_PhDFlopper", function(ply, speed)
-    local wep = ply:GetActiveWeapon()
+    local wep = IsValid(ply) and ply:GetActiveWeapon()
     if not IsValid(wep) or not wep.ArcCW or not wep:GetBuff_Override("BO1_PhDFlopper") then return end
 
     local mult = math.Clamp((speed - 512) / 512, 0.1, 1)

@@ -149,7 +149,7 @@ SWEP.RejectAttachments = {
 }
 
 SWEP.Attachments = {
-    { --1
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
@@ -161,7 +161,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     },
-    { --2
+    {
         PrintName = "Tactical",
         Slot = {"bo1_steadyaim"},
         Bone = "tag_weapon",
@@ -174,15 +174,23 @@ SWEP.Attachments = {
             wang = Angle(-5, -2, 177.5)
         },
     },
-    { --3
+    {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --4
-        PrintName = "Perk",
-        Slot = "bo1_perk"
+    {
+        PrintName = "Perk 1",
+        Slot = "bo1_perk1"
     },
-    { --5
+    {
+        PrintName = "Perk 2",
+        Slot = "bo1_perk2"
+    },
+    {
+        PrintName = "Perk 3",
+        Slot = "bo1_perk3"
+    },
+    {
         PrintName = "Charm",
         Slot = "charm",
         Bone = "j_bolt",

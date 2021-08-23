@@ -17,3 +17,15 @@ L["bo1.perkacola.vultureaid"] = "Killing enemies drops ammo for this weapon"
 L["bo1.perkacola.juggernog"] = "Reduce damage taken by 25%"
 L["bo1.perkacola.phdflopper.1"] = "Immune to fall and explosive damage"
 L["bo1.perkacola.phdflopper.2"] = "Landing from a fall creates an explosion"
+
+L["bo1.perk.pro"] = "Only one Pro perk allowed per weapon"
+
+L["bo1.perk.scavenger"] = "Killing enemies drops ammo for this weapon"
+L["bo1.perk.scavenger.pro"] = "Drop amount is doubled"
+L["bo1.perk.lightweight"] = "+7% Bonus speed"
+L["bo1.perk.lightweight.pro"] = "Immune to fall damage"
+L["bo1.perk.flakjacket"] = "-50% Explosive damage taken"
+L["bo1.perk.flakjacket.pro.1"] = "-75% Explosive damage taken"
+L["bo1.perk.flakjacket.pro.2"] = "-90% Fire damage taken"
+
+L["bo1.perk.hardened.pro"] = "Hits remove armor equal to 50% damage"

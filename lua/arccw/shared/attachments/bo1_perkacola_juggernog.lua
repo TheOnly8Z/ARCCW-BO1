@@ -16,7 +16,7 @@ att.BO1_Juggernog = true
 att.AttachSound = "weapons/arccw/bo1_perks/perk_jug.wav"
 
 hook.Add("EntityTakeDamage", "ArcCW_BO1_Juggernog", function(ply, dmg)
-    local wep = IsValid(ply) and ply:GetActiveWeapon()
+    local wep = IsValid(ply) and ply:IsPlayer() and ply:GetActiveWeapon()
     if not IsValid(wep) or not wep.ArcCW or not wep:GetBuff_Override("BO1_Juggernog") then return end
     dmg:ScaleDamage(0.75)
 end)
